@@ -1,0 +1,257 @@
+.footer-container {
+    width: 100%;
+    height: auto; 
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.first-con {
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+.first-con h2 {
+    background-color: hsl(127, 44%, 96%);
+    padding: 10px; 
+    margin: 0; 
+}
+
+
+.second-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    background-color: white;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #080808;
+}
+
+.third-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.icon-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 10px; 
+}
+
+.icon {
+    margin-bottom: 10px; 
+    color: #3beb3b;
+    font-size: 60px;
+}
+
+.text h3 {
+    margin: 0; 
+    font-size: 16px; 
+    color: #f1e9e9; 
+}
+
+.fourth-con {
+    background-color: #020202;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.rightside-row, .middle-side, .leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    color: #ccc;
+    margin: 0 auto; 
+    max-width: 400px; 
+}
+
+.middle-side2 {
+    display: flex;
+    gap: 10px;
+}
+.leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    color: #ccc;
+    margin: 0 auto;
+    max-width: 400px; 
+}
+
+.leftside input[type="text"] {
+ padding: 10px;
+ margin-top: 10px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ width: 100%; 
+ box-sizing: border-box; 
+}
+
+.leftside button {
+ padding: 10px 20px;
+ border: none;
+ background-color: #007bff;
+ color: white;
+ border-radius: 4px;
+ cursor: pointer;
+ width: 100%; 
+ box-sizing: border-box; 
+}
+
+.leftside button:hover {
+ background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+   .leftside {
+       display: flex;
+       flex-direction: column;
+       align-items: center; 
+       gap: 10px; 
+       color: #ccc;
+       margin: 0 auto;
+       max-width: 400px; 
+}
+
+.leftside input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.leftside button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.leftside button:hover {
+    background-color: #0056b3;
+}
+}
+
+@media (max-width: 768px) {
+    .first-con h2 {
+        font-size: 1.5rem; 
+    }
+    
+    .second-con, .third-con, .fourth-con {
+        padding: 10px; 
+    }
+    
+    .brand-name {
+        font-size: 16px; 
+    }
+    
+    .icon {
+        font-size: 40px; 
+    }
+    
+    .text h3 {
+        font-size: 14px; 
+    }
+    
+    .rightside-row, .middle-side, .leftside {
+        max-width: 100%; 
+    }
+    
+    .leftside {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px; 
+        color: #ccc;
+        margin: 0 auto;
+        max-width: 400px; 
+    }
+    
+    .leftside input[type="text"] {
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+    
+    .leftside button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+    
+    .leftside button:hover {
+        background-color: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+        .leftside input[type="text"], 
+        .leftside button {
+            width: 100%; 
+        }
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px; 
+    }
+    
+    .brand-name {
+        font-size: 14px;
+    }
+    
+    .icon {
+        font-size: 30px;
+    }
+    
+    .text h3 {
+        font-size: 12px;
+    }
+}

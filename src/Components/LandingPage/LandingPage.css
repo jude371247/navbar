@@ -1,0 +1,143 @@
+.landing-page {
+  width: 90%;
+  height: 100vh;
+  background-image: url(../../assets/Oranges.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10rem; 
+  margin-bottom: 3rem;
+  border-radius: 30px;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+.text h1 {
+  color: black;
+  font-size: 3rem; 
+  margin-bottom: 3rem; 
+}
+
+.text button {
+  background-color: #3beb3b;
+  color: black;
+  width: 250px; 
+  height: 50px; 
+  font-size: 20px; 
+  cursor: pointer;
+  border: none;
+  border-radius: 20px; 
+  margin-top: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text:hover {
+  animation: drop-down 0.5s ease-out forwards;
+}
+
+.text button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: bounce 0.5s;
+}
+@media (max-width: 1200px) {
+  .landing-page {
+    height: auto; 
+    margin-top: 7rem; 
+    margin-bottom: 2rem; 
+    margin-left: 2rem;
+    padding: 10px; 
+    border-radius: 20px; 
+  }
+
+  .text h1 {
+    font-size: 2rem; 
+    margin-bottom: 2rem; 
+  }
+
+  .text button {
+    width: 200px;
+    height: 45px; 
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    height: auto; 
+    margin-top: 7rem; 
+    margin-bottom: 2rem; 
+    margin-left: 2rem;
+    padding: 10px; 
+    border-radius: 20px; 
+  }
+
+  .text h1 {
+    font-size: 2rem; 
+    margin-bottom: 2rem; 
+  }
+
+  .text button {
+    width: 200px;
+    height: 45px; 
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-page {
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    padding: 5px; 
+    border-radius: 10px; 
+    margin-left: 1rem;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; 
+  }
+
+  .text button {
+    width: 150px;
+    height: 40px; 
+    font-size: 16px;
+  }
+}
+
+@keyframes drop-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
